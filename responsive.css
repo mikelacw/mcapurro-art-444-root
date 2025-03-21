@@ -1,0 +1,328 @@
+/* TABLET VIEW */
+@media only screen and (max-width:992px) {
+  h1 {
+    font-size: 80px;
+
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 30px;
+
+  flex-wrap: wrap; 
+}
+
+.infoheader {
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: nowrap; 
+  justify-content: center;
+}
+
+
+
+
+.infoheader a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  transition: 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+
+
+section {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  padding: 30px 0px;
+}
+
+/* SKILLS */
+#skills {
+  background-color: #f2efef;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.skill p {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.skill-bar {
+  width: 90%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+
+}
+
+.fill {
+  height: 100%;
+  background-color: #F27312;
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+
+h2 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+}
+  
+
+h5 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 40px 10px 0px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 478px) {
+  .infoheader { display: none; }
+  .hamburgericon { display: inline-block; cursor: pointer; }
+
+  section {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 20px 0px;
+  }
+  
+
+  /* NAME INTRO */
+.fullname-flex { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.fullname-flex h1 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 70px;
+}
+
+.fullname-flex:nth-child(2) { 
+  justify-content: flex-end;
+}
+
+  
+body {
+    background-color: #D9D9D9;
+    font-size: .8em /*em means the font size is going down by 80%*/
+  }
+
+
+/* ABOUT WRAPPER */
+.flex-column-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+.column {
+  width: 90%;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #F27312; 
+  margin: 0px 0;
+}
+
+
+/*STYLES*/
+h1 {
+  color: #000000;
+  font-family: "Montserrat";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+
+}
+
+h2 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 10px;
+  
+}
+
+h3 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+}
+
+
+h5 {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  padding: 40px 10px 0px 20px;
+
+}
+
+p {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 200;
+  line-height: normal;
+}
+
+
+/* FAQs */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  gap: 10px; 
+  align-items: flex-start;
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  width: 100%; 
+}
+
+.faq-question {
+  font-weight: bold;
+  text-align: left;
+  width: 100%; 
+}
+
+.faq-answer {
+  text-align: left;
+  width: 100%; 
+}
+
+/* SKILLS */
+#skills {
+  background-color: #f2efef;
+}
+
+#skills h2 {
+  margin-bottom: 40px;
+}
+
+.skill {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.skill p {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.skill-bar {
+  width: 90%;
+  height: 12px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+
+}
+
+.fill {
+  height: 100%;
+  background-color: #F27312;
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+
+
+/* footer */
+.footer-info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright p{
+  font-size: 8px;
+}
+
+
+.footer-info p{
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+}
