@@ -32,7 +32,6 @@ nav {
 
 .infoheader a {
     text-decoration: none;
-    color: #000000;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -79,7 +78,6 @@ nav {
 
 
 h1 {
-    color: #000000;
     font-family: "Montserrat";
     font-size: 160px;
     font-style: normal;
@@ -90,7 +88,6 @@ h1 {
 }
 
 h2 {
-    color: #000;
     font-family: "Montserrat";
     font-size: 56px;
     font-style: normal;
@@ -100,7 +97,6 @@ h2 {
 }
 
 h3 {
-    color: #000;
     font-family: "Montserrat";
     font-size: 26px;
     font-style: normal;
@@ -110,7 +106,6 @@ h3 {
 }
 
 h5 {
-    color: #000;
     font-family: "Montserrat";
     font-size: 25px;
     font-style: normal;
@@ -121,7 +116,6 @@ h5 {
 }
 
 p {
-    color: #000;
     font-family: "Montserrat";
     font-size: 20px;
     font-weight: 200;
@@ -308,15 +302,12 @@ section#about {
 
 .faq-answer {
     width: 50%;
-    color: #000000;
 }
 
 .faq-question p,
 .faq-answer p {
     margin-bottom: 3px;
 }
-
-
 
 .divider {
     width: 100%;
@@ -389,8 +380,6 @@ title-faq h1{
   font-weight: bold;
 }
 
-
-
 .experience h1 {
     justify-content: left;
     display: flex;
@@ -406,7 +395,6 @@ title-faq h1{
     font-family: 'Inter', sans-serif;
 
   }
-
 
 .experience body {
     background-color: #222;
@@ -468,6 +456,45 @@ title-faq h1{
 
 
 
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+
+
 
 /*.button {
     background: 
@@ -487,4 +514,32 @@ title-faq h1{
 }
 */
 
+/* Mobile menu hidden by default */
 
+/* Show the menu when toggle adds class */
+#mobile-menu {
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Hamburger only on small screens */
+#menu-toggle {
+  display: none;
+}
+
+.dark-mode {
+  background-color: #373636 !important;
+  color: #ddd !important;
+  
+
+  
+}
+
+.a-dark {
+  color: #F27312!important;
+}

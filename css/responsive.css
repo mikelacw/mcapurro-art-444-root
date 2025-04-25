@@ -1,3 +1,8 @@
+#menu-toggle,
+#mobile-menu {
+  display: none;
+}
+
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
   h1 {
@@ -23,12 +28,8 @@ nav {
   justify-content: center;
 }
 
-
-
-
 .infoheader a {
   text-decoration: none;
-  color: #000000;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -38,8 +39,6 @@ nav {
   white-space: nowrap;
 }
 
-
-
 section {
   width: 100%;
   height: auto;
@@ -48,8 +47,6 @@ section {
 }
 
 /* SKILLS */
-
-
 #skills h2 {
   margin-bottom: 40px;
 }
@@ -81,18 +78,16 @@ section {
 }
 
 h2 {
-  color: #000;
+
   font-family: "Montserrat";
   font-size: 46px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 10px;
-}
-  
+}  
 
 h5 {
-  color: #000;
   font-family: "Montserrat";
   font-size: 25px;
   font-style: normal;
@@ -103,22 +98,84 @@ h5 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MOBILE VIEW */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+  .infoheader {
+    display: none;
+  }
+  #mobile-menu {
+    background-color: #fafafa85;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: none; /* initial state */
+    z-index: 1000;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+
+  #menu-toggle svg path {
+    stroke: #000000;
+    stroke-width: 1;
+  }
+
+
+
+  #menu-toggle:hover svg path {
+    stroke: #F27312;
+    stroke-width: 2;
+  
+  }
+  
+  #mobile-menu{
+    background-color: #fafafa85;
+
+  }
+  #mobile-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color:#F27312;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+
+  .show{
+    justify-content: space-around;
+    align-items: stretch;
+
+  }
+
+  
+  .dark-mode #menu-toggle svg path {
+    fill: #e0e0e0;
+  }
+
+  .dark-mode #mobile-menu {
+    background-color: #373636 !important;
+
+  }
+
+
 @media only screen and (max-width: 478px) {
   .infoheader { display: none; }
   .hamburgericon { display: inline-block; cursor: pointer; }
@@ -152,7 +209,6 @@ h5 {
 
   
 body {
-    background-color: #D9D9D9;
     font-size: .8em /*em means the font size is going down by 80%*/
   }
 
@@ -179,7 +235,6 @@ body {
 
 /*STYLES*/
 h1 {
-  color: #000000;
   font-family: "Montserrat";
   font-size: 80px;
   font-style: normal;
@@ -190,7 +245,6 @@ h1 {
 }
 
 h2 {
-  color: #000;
   font-family: "Montserrat";
   font-size: 36px;
   font-style: normal;
@@ -201,7 +255,6 @@ h2 {
 }
 
 h3 {
-  color: #000;
   font-family: "Montserrat";
   font-size: 27px;
   font-style: normal;
@@ -210,9 +263,7 @@ h3 {
   
 }
 
-
 h5 {
-  color: #000;
   font-family: "Montserrat";
   font-size: 20px;
   font-style: normal;
@@ -224,13 +275,11 @@ h5 {
 }
 
 p {
-  color: #000;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 200;
   line-height: normal;
 }
-
 
 /* FAQs */
 .faq-container {
@@ -285,7 +334,6 @@ p {
   background-color: #e0e0e0;
   border-radius: 6px;
   overflow: hidden;
-
 }
 
 .fill {
@@ -295,8 +343,7 @@ p {
   transition: width 0.8s ease;
 }
 
-
-/* footer */
+/* FOOTER */
 .footer-info {
   display: flex;
   flex-direction: column; 
@@ -311,16 +358,7 @@ p {
 
 
 .footer-info p{
-  color: black;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 200;
   padding: 10px;
-}
-
-
-
-
-
-
-
 }
