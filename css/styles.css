@@ -543,3 +543,33 @@ title-faq h1{
 .a-dark {
   color: #F27312!important;
 }
+
+
+
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fullname-flex h1 {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+.fullname-flex:nth-of-type(2) h1 {
+  animation-delay: 0.5s;
+}
+
+/* 👇 Now for your h5 */
+.header h5 {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 1.1s;
+}
